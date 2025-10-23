@@ -1,6 +1,5 @@
 import psutil
 
-# Отримати всі процеси
 for proc in psutil.process_iter(['pid', 'name', 'username']):
     try:
         print(proc.info)
